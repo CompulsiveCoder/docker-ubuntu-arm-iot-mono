@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y apt-transport-https dirmngr software-pr
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
     
 RUN add-apt-repository -y ppa:eugenesan/ppa \
-    && apt-get -y update \
+    && apt-get update \
     && apt-get -y upgrade \
     && apt-get -y install jq\
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
